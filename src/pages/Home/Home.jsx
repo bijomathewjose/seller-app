@@ -26,7 +26,7 @@ const Home = () => {
       <Search onSearch={onSearch}/>
       <Gallery carsInPage={carsInPage.slice(0,3)}/>
       <Gallery carsInPage={carsInPage.slice(3,6)}/>
-      <Pagination page={page} start={firstIndex+1} end={lastIndex} length={cars.length}/>
+      <Pagination  start={firstIndex+1} end={lastIndex} length={cars.length}/>
     </div>
 )}
 

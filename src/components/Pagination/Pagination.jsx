@@ -1,13 +1,15 @@
 import {} from 'react'
 import Button from '../Button/Button'
 import Style from './Pagination.module.css'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 const customStyle={background:'#ffffff',color:'black',boxShadow:'0 0 5px 5px rgba(0, 0, 0, 0.1)',width:'40px'}
-const Pagination = ({page,start,end,length}) => {
+const Pagination = ({length}) => {
+  const {page}=useParams()
   const currentPage=Number(page)
   const pages=Array.from({length:10},(_,i)=>i+1)
   const navigate=useNavigate()
   const onForward=()=>{
+
     if(currentPage<10) navigate(`/page/${currentPage+1}`)
   }
   const onBackword=()=>{
@@ -15,7 +17,7 @@ const Pagination = ({page,start,end,length}) => {
   }
   return (
     <div className={Style.Container}>
-      <p>{start}-{end} cars of {length}</p>
+      <p>6 cars of {length}</p>
       
         <div className={Style.pages}>
         {currentPage!==1 &&<Button  value='<' customStyle={customStyle} onClick={onBackword}/>}

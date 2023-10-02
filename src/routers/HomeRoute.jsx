@@ -1,4 +1,5 @@
-import Home from "../Pages/Home"
+import Home from "../pages/Home/Home"
+
 
 const HomeRoutes={
     path: '/page/:page',

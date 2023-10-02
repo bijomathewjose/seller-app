@@ -1,17 +1,6 @@
 {
     "cars": [
         {
-            "id":"000001" , 
-            "make": "Toyota",
-            "model": "RAV4",
-            "year": 2021,
-            "fuelType": "Hybrid",
-            "transmission": "Automatic",
-            "fuelEconomy": "6.1km/1-litre",
-            "seatingCapacity": 4,
-            "price": 440
-        },
-        {
             "id":"000002" , 
             "make": "BMW",
             "model": "3 Series",
@@ -65,6 +54,17 @@
             "fuelEconomy": "7.2km/1-litre",
             "seatingCapacity": 4,
             "price": 490
+        },
+        {
+            "id":"000001" , 
+            "make": "Toyota",
+            "model": "RAV4",
+            "year": 2021,
+            "fuelType": "Hybrid",
+            "transmission": "Automatic",
+            "fuelEconomy": "6.1km/1-litre",
+            "seatingCapacity": 4,
+            "price": 440
         }
       ]
 }

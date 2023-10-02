@@ -1,0 +1,70 @@
+{
+    "cars": [
+        {
+            "id":"000001" , 
+            "make": "Toyota",
+            "model": "RAV4",
+            "year": 2021,
+            "fuelType": "Hybrid",
+            "transmission": "Automatic",
+            "fuelEconomy": "6.1km/1-litre",
+            "seatingCapacity": 4,
+            "price": 440
+        },
+        {
+            "id":"000002" , 
+            "make": "BMW",
+            "model": "3 Series",
+            "year": 2019,
+            "fuelType": "Gasoline",
+            "transmission": "Automatic",
+            "fuelEconomy": "8.2km/1-litre",
+            "seatingCapacity": 5,
+            "price": 350
+        },
+        {
+            "id":"000003" , 
+            "make": "Audi",
+            "model": "A4 People",
+            "year": 2020,
+            "fuelType": "Gasoline",
+            "transmission": "Automatic",
+            "fuelEconomy": "5.3km/1-litre",
+            "seatingCapacity": 5,
+            "price": 400
+        },
+        {
+            "id":"000004" , 
+            "make": "Cadillac",
+            "model": "Escalade",
+            "year": 2021,
+            "fuelType": "Gasoline",
+            "transmission": "Automatic",
+            "fuelEconomy": "7.7km/1-litre",
+            "seatingCapacity": 8,
+            "price": 620
+        },
+        {
+            "id":"000005" , 
+            "make": "BMW",
+            "model": "4 Series GTI",
+            "year": 2019,
+            "fuelType": "Gasoline",
+            "transmission": "Automatic",
+            "fuelEconomy": "7.5km/1-litre",
+            "seatingCapacity": 4,
+            "price": 530
+        },
+        {
+            "id":"000006" , 
+            "make": "BMW",
+            "model": "4 Series",
+            "year": 2020,
+            "fuelType": "Gasoline",
+            "transmission": "Automatic",
+            "fuelEconomy": "7.2km/1-litre",
+            "seatingCapacity": 4,
+            "price": 490
+        }
+      ]
+}

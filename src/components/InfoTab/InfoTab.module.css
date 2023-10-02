@@ -1,0 +1,23 @@
+.infoContainer{
+    display: flex;
+    gap: 5px;
+    border-radius: 15px;
+    padding:5px 10px;
+    font-size: 13.5px;
+    width: 50%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    font-size: 12px;
+    font-weight: 900;
+}
+.logo svg{
+    fill: #4899ED;
+    stroke: #4899ED;
+}
+.value{
+    font-weight: 600;
+}

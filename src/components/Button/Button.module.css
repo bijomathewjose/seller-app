@@ -1,0 +1,17 @@
+.button{
+    user-select: none;
+    padding: 10px 15px;
+    border-radius: 13px;
+    background-color: #4899ED;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+.button svg{
+    fill: #4899ED
+}
+.button:active{
+    transform: scale(0.95);
+}

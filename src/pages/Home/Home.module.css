@@ -1,6 +1,8 @@
 .homeContainer{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     padding: 15px;
+    width: 100%;
+    min-width: 1000px;
 }

@@ -1,8 +1,11 @@
 import {} from 'react'
-
-const InfoTab = () => {
+import Style from './InfoTab.module.css'
+const InfoTab = ({logo='',value='',containerStyle,logoStyle,valueStyle}) => {
   return (
-    <div>InfoTab</div>
+    <div className={Style.infoContainer} style={containerStyle}>
+      {logo && <p className={Style.logo} style={logoStyle}>{logo}</p>}
+      <p className={Style.value} style={valueStyle}>{value}</p>
+    </div>
   )
 }
 

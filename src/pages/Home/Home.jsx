@@ -5,6 +5,13 @@ import Search from '../../components/Search/SearchBar'
 import Gallery from '../../components/Gallery/Gallery'
 import Pagination from '../../components/Pagination/Pagination'
 import Style from  './Home.module.css'
+
+const simplify=(str)=>{
+  return str?str.replace(/\W/g,'').toLowerCase():''
+}
+const searchData = (string1,string2) => {
+  return simplify(string1).includes(string2)
+}
 const Home = () => {
   const navigate=useNavigate()
   const {page}=useParams()
@@ -13,11 +20,13 @@ const Home = () => {
   const lastIndex=page*itemsPerPage
   const [cars,setCars]=useState(data.cars)
   const carsInPage=cars.slice(firstIndex,lastIndex)
+  
     const onSearch = (e) => {
         e.preventDefault()
-        const searchValue=(e.target['search'].value).toLowerCase().replace(/ /g,'')
+        const searchValue=simplify(e.target['search'].value)
+        console.log(searchValue)
         if(searchValue==='') setCars(data.cars)
-        const filteredCars=data.cars.filter(car=> (car.make+car.model).toLowerCase().includes(searchValue))
+        const filteredCars=data.cars.filter(car=>searchData(car.make+car.model,searchValue))
         setCars(filteredCars)
         navigate(`/page/1`)
     }
